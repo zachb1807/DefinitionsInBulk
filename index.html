@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    Hello world
+    <form onsubmit="return false;" action="#" id="form">
+        <input type="text" id="1" class="inputBoxes">
+    </form>
+
+    <script>
+        var textBoxCounter = 1;
+
+        function addTextBox(e, currentElement) {
+            if (e.code == "Enter") {
+                if (currentElement.id == textBoxCounter.toString() && currentElement.value != "") {
+                    textBoxCounter++;
+                    var newtextbox = document.createElement("input");
+                    var newbutton = document.createElement("button");
+                    newbutton.innerHTML = "Remove"
+                    newtextbox.id = textBoxCounter.toString();
+                    newtextbox.className = ""
+                    newtextbox.onkeydown = function (e) {
+                        addTextBox(e, newtextbox);
+                    }
+                    var breakElement = document.createElement("br");
+                    form.appendChild(breakElement);
+                    form.appendChild(newtextbox);
+                    newtextbox.focus();
+                }
+                else {
+                    var nextElement = document.getElementById((parseInt(currentElement.id) + 1).toString());
+                    nextElement.focus();
+                }
+            }
+        }
+
+
+        var form = document.getElementById("form");
+        var firstInput = document.getElementById("1");
+        firstInput.onkeydown = function (e) {
+            addTextBox(e, firstInput);
+        }
+
+
+        function doSearch(word) {
+            var userResponse;
+            var url = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    console.log(xhr.status);
+                    userResponse = JSON.parse(xhr.responseText);
+                    console.log(userResponse[0].meanings[0].definitions[0].definition);
+
+                }
+            };
+
+            xhr.send();
+        }
+
+    </script>
+
+
+</html>
