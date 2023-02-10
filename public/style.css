@@ -42,10 +42,10 @@
 
 body {
     background: rgb(255,255,255);
-    background: -moz-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
-    background: -webkit-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
-    background: linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#fcffff",GradientType=1);
+    background: -moz-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9989495798319328) 48%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9989495798319328) 48%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9989495798319328) 48%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
     min-height: 100%;
 }
 html {
@@ -68,6 +68,7 @@ html {
     max-width: 600px !important;
     margin-left: 12px !important;
     margin-right: 12px !important;
+    align-items: center !important;
 }
 
 .notification {
