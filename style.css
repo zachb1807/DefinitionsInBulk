@@ -1,0 +1,83 @@
+.inputBoxes {
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline-color: #67b7db;
+    max-width: 350px !important;
+    margin: auto;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.title {
+    font-family: 'Inter';
+    font-size: 35px;
+    color: #333333;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: -.025em;
+    margin-top: 20px;
+    font-weight: 800 !important;
+}
+
+#nav-title {
+    font-family: 'Inter';
+    font-size: 23px;
+    color: #333333;
+    letter-spacing: -.025em;
+    margin-top: 20px;
+    color: white
+}
+
+.nav {
+    height: 60px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(171, 100%, 41%);
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+
+body {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
+    background: -webkit-linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
+    background: linear-gradient(48deg, rgba(255,255,255,1) 0%, rgba(235,255,252,0.9149159663865546) 34%, rgba(252,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#fcffff",GradientType=1);
+    min-height: 100%;
+}
+html {
+    height: 100%;
+}
+
+.button {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) {
+    .title {
+        font-size: 27px !important;
+    }
+}
+
+.container {
+    max-width: 600px !important;
+}
+
+.notification {
+    width: 100%;
+    border: 2px solid hsl(171, 100%, 41%);
+    border-radius: 10px !important;
+}
+.notification:hover {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.definition-div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
