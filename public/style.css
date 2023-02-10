@@ -66,6 +66,8 @@ html {
 
 .container {
     max-width: 600px !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
 }
 
 .notification {

@@ -52,6 +52,7 @@
                     var newtextbox = document.createElement("input");
                     newtextbox.id = textBoxCounter.toString();
                     newtextbox.className = "inputBoxes input is-primary has-text-centered"
+                    newtextbox.autocomplete = "off";
                     newtextbox.onkeydown = function (e) {
                         addTextBox(e, newtextbox);
                     }
